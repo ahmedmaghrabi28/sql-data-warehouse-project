@@ -68,7 +68,7 @@ SELECT
 FROM silver.crm_prd_info AS pn
 LEFT JOIN silver.erp_px_cat_g1v2 AS pc
 ON pn.cat_id = pc.id
-WHERE prd_end_dt IS NULL -- Filter out all historical data
+WHERE prd_end_dt IS NULL; -- Filter out all historical data
 GO
 
 -- =============================================================================
@@ -93,4 +93,5 @@ FROM silver.crm_sales_details AS sd
 LEFT JOIN gold.dim_products AS pr
 ON sd.sls_prd_key = pr.product_number
 LEFT JOIN gold.dim_customers cu
-ON sd.sls_cust_id = cu.customer_id
+ON sd.sls_cust_id = cu.customer_id;
+GO
