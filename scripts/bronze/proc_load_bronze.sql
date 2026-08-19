@@ -121,10 +121,10 @@ BEGIN
 		PRINT '---------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: erp_px_cat_giv2';
-		TRUNCATE TABLE bronze.erp_px_cat_giv2
-		PRINT '>> Inserting Data Into: bronze.erp_px_cat_giv2';
-		BULK INSERT bronze.erp_px_cat_giv2
+		PRINT '>> Truncating Table: erp_px_cat_g1v2';
+		TRUNCATE TABLE bronze.erp_px_cat_g1v2
+		PRINT '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
+		BULK INSERT bronze.erp_px_cat_g1v2
 		FROM 'D:\Data Warehouse project\datasets\source_erp\PX_CAT_G1V2.csv'
 		WITH(
 			FIRSTROW = 2,
