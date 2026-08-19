@@ -204,10 +204,10 @@ BEGIN
 		PRINT '---------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Data Into: silver.erp_px_cat_giv2';
-		TRUNCATE TABLE silver.erp_px_cat_giv2;
-		PRINT '>> Inserting Data Into: silver.erp_px_cat_giv2';
-		INSERT INTO silver.erp_px_cat_giv2 (id,cat,subcat,maintenance)
+		PRINT '>> Truncating Data Into: silver.erp_px_cat_g1v2';
+		TRUNCATE TABLE silver.erp_px_cat_g1v2;
+		PRINT '>> Inserting Data Into: silver.erp_px_cat_g1v2';
+		INSERT INTO silver.erp_px_cat_g1v2 (id,cat,subcat,maintenance)
 		SELECT
 			id,
 			cat,
